@@ -1,0 +1,18 @@
+{
+  "name": "ts-simple",
+  "version": "0.0.0-development",
+  "main": "src/main.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "clean": "shx rm -rf build",
+    "dev": "nodemon --watch src/**/* --ext ts --exec ts-node src/main.ts",
+    "start": "node build/main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.12",
+    "nodemon": "^1.18.7",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.1"
+  }
+}
